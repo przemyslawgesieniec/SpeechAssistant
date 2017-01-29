@@ -1,0 +1,27 @@
+﻿<Window x:Class="SpeechAssistent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpeechAssistent"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Frame x:Name="StartingPage" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+            <Frame.Template>
+                <ControlTemplate TargetType="Frame">
+                    <DockPanel Margin="7">
+                        <Grid Margin="8" DockPanel.Dock="Top">
+                            <TextBox x:Name="textBox" Height="46" TextWrapping="Wrap" Text="Speech assistent" VerticalAlignment="Top" FontSize="22" HorizontalContentAlignment="Center"/>
+                        </Grid>
+                        <Button x:Name="button" Content="START" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="40"/>
+                    </DockPanel>
+                </ControlTemplate>
+            </Frame.Template>
+        </Frame>
+
+       
+
+
+    </Grid>
+</Window>
